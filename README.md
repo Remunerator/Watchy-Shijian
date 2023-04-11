@@ -3,7 +3,7 @@
 ![Shijian screenshot](/screenshot/Shijian.gif?raw=true)
 
 ## About
-**Shijian** (时间/事件) is a simple aesthetic Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It is modified from [Stationary Text](https://github.com/BraininaBowl/Stationary-Text-for-Watchy).
+**Shijian** is a simple aesthetic Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It is modified from [Stationary Text](https://github.com/BraininaBowl/Stationary-Text-for-Watchy).
 
 * It only tells the time, so no additional settings are required.
 * The characters for the hour are in uppercase (大写) to fit with the style.
@@ -49,5 +49,5 @@ To convert the glyphs, I implemented [fontconvert](https://github.com/adafruit/A
 | `0x57` | W | 分 | Minutes |
 | `0x58` | X | 整 | Sharp |
 
-## Mentions
+## Other
 Special thanks to [Pconti31](https://github.com/Pconti31) for his [TTF2GFX](https://github.com/Pconti31/TTF2GFX) library.
