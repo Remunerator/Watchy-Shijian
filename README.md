@@ -21,7 +21,7 @@ Modifying the glyphs is pretty complicated:
 
 To convert the glyphs, I implemented [fontconvert](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/fontconvert) in Python with [freetype-py](https://pypi.org/project/freetype-py/). If there's interest, I'll make this script open-source.
 
-Modified glyphs:
+### Modified Glyphs
 | Original | Replaced | Unicode |
 | - | - | - |
 | A | 零 | `0x41` |
