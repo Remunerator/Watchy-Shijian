@@ -1,6 +1,6 @@
 # Shijian for Watchy
 
-![Shijian screenshot](https://raw.githubusercontent.com/Remunerator/Watchy-Shijian/master/screenshot/Shijian.gif)
+![Shijian screenshot](/screenshot/Shijian.gif?raw=true)
 
 ## About
 **Shijian** is a simple, no-frills Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It was modified from [Stationary Text](https://github.com/BraininaBowl/Stationary-Text-for-Watchy).
