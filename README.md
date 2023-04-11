@@ -19,35 +19,35 @@ Modifying the glyphs is pretty complicated:
 * Most uppercase English letters were replaced with Chinese glyphs during the conversion to GFX.
 * If you need those uppercase characters back, you'll need to convert the fonts yourself.
 
-To convert the glyphs, I implemented [fontconvert](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/fontconvert) in Python with [freetype-py](https://pypi.org/project/freetype-py/). If there's interest, I'll make this script open-source.
+To convert the glyphs, I implemented [fontconvert](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/fontconvert) in Python with [freetype-py](https://pypi.org/project/freetype-py/). If there's interest, I'll open-source the script.
 
 ### Modified Glyphs
-| Original | Replaced | Unicode |
-| - | - | - |
-| A | 零 | `0x41` |
-| B | 一 | `0x42` |
-| C | 二 | `0x43` |
-| D | 三 | `0x44` |
-| E | 四 | `0x45` |
-| F | 五 | `0x46` |
-| G | 六 | `0x47` |
-| H | 七 | `0x48` |
-| I | 八 | `0x49` |
-| J | 九 | `0x4A` |
-| K | 十 | `0x4B` |
-| L | 壹 | `0x4C` |
-| M | 贰 | `0x4D` |
-| N | 叁 | `0x4E` |
-| O | 肆 | `0x4F` |
-| P | 伍 | `0x50` |
-| Q | 陆 | `0x51` |
-| R | 柒 | `0x52` |
-| S | 捌 | `0x53` |
-| T | 玖 | `0x54` |
-| U | 拾 | `0x55` |
-| V | 时 | `0x56` |
-| W | 分 | `0x57` |
-| X | 整 | `0x58` |
+| ASCII | Original | Replaced | Translation |
+| - | - | - | - |
+| `0x41` | A | 零 | 0 |
+| `0x42` | B | 一 | 1 (lc) |
+| `0x43` | C | 二 | 2 (lc) |
+| `0x44` | D | 三 | 3 (lc) |
+| `0x45` | E | 四 | 4 (lc) |
+| `0x46` | F | 五 | 5 (lc) |
+| `0x47` | G | 六 | 6 (lc) |
+| `0x48` | H | 七 | 7 (lc) |
+| `0x49` | I | 八 | 8 (lc) |
+| `0x4A` | J | 九 | 9 (lc) |
+| `0x4B` | K | 十 | 10 (lc) |
+| `0x4C` | L | 壹 | 1 (uc) |
+| `0x4D` | M | 贰 | 2 (uc) |
+| `0x4E` | N | 叁 | 3 (uc) |
+| `0x4F` | O | 肆 | 4 (uc) |
+| `0x50` | P | 伍 | 5 (uc) |
+| `0x51` | Q | 陆 | 6 (uc) |
+| `0x52` | R | 柒 | 7 (uc) |
+| `0x53` | S | 捌 | 8 (uc) |
+| `0x54` | T | 玖 | 9 (uc) |
+| `0x55` | U | 拾 | 10 (uc) |
+| `0x56` | V | 时 | Hours |
+| `0x57` | W | 分 | Minutes |
+| `0x58` | X | 整 | Sharp |
 
 ## Mentions
 Special thanks to [Pconti31](https://github.com/Pconti31) for his [TTF2GFX](https://github.com/Pconti31/TTF2GFX) library.
