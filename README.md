@@ -25,26 +25,26 @@ To convert the glyphs, I implemented [fontconvert](https://github.com/adafruit/A
 | ASCII | Original | Replaced | Translation |
 | - | - | - | - |
 | `0x41` | A | 零 | 0 |
-| `0x42` | B | 一 | 1 (lc) |
-| `0x43` | C | 二 | 2 (lc) |
-| `0x44` | D | 三 | 3 (lc) |
-| `0x45` | E | 四 | 4 (lc) |
-| `0x46` | F | 五 | 5 (lc) |
-| `0x47` | G | 六 | 6 (lc) |
-| `0x48` | H | 七 | 7 (lc) |
-| `0x49` | I | 八 | 8 (lc) |
-| `0x4A` | J | 九 | 9 (lc) |
-| `0x4B` | K | 十 | 10 (lc) |
-| `0x4C` | L | 壹 | 1 (uc) |
-| `0x4D` | M | 贰 | 2 (uc) |
-| `0x4E` | N | 叁 | 3 (uc) |
-| `0x4F` | O | 肆 | 4 (uc) |
-| `0x50` | P | 伍 | 5 (uc) |
-| `0x51` | Q | 陆 | 6 (uc) |
-| `0x52` | R | 柒 | 7 (uc) |
-| `0x53` | S | 捌 | 8 (uc) |
-| `0x54` | T | 玖 | 9 (uc) |
-| `0x55` | U | 拾 | 10 (uc) |
+| `0x42` | B | 一 | 1 (lowercase) |
+| `0x43` | C | 二 | 2 (lowercase) |
+| `0x44` | D | 三 | 3 (lowercase) |
+| `0x45` | E | 四 | 4 (lowercase) |
+| `0x46` | F | 五 | 5 (lowercase) |
+| `0x47` | G | 六 | 6 (lowercase) |
+| `0x48` | H | 七 | 7 (lowercase) |
+| `0x49` | I | 八 | 8 (lowercase) |
+| `0x4A` | J | 九 | 9 (lowercase) |
+| `0x4B` | K | 十 | 10 (lowercase) |
+| `0x4C` | L | 壹 | 1 (uppercase) |
+| `0x4D` | M | 贰 | 2 (uppercase) |
+| `0x4E` | N | 叁 | 3 (uppercase) |
+| `0x4F` | O | 肆 | 4 (uppercase) |
+| `0x50` | P | 伍 | 5 (uppercase) |
+| `0x51` | Q | 陆 | 6 (uppercase) |
+| `0x52` | R | 柒 | 7 (uppercase) |
+| `0x53` | S | 捌 | 8 (uppercase) |
+| `0x54` | T | 玖 | 9 (uppercase) |
+| `0x55` | U | 拾 | 10 (uppercase) |
 | `0x56` | V | 时 | Hours |
 | `0x57` | W | 分 | Minutes |
 | `0x58` | X | 整 | Sharp |
