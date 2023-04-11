@@ -16,12 +16,12 @@ Modifying the logic is very simple:
 
 Modifying the glyphs is pretty complicated:
 * All fonts are in the `font` folder.
-* I replaced most uppercase English letters with Chinese glyphs when converting to Adafruit GFX.
-* If you need English characters, please re-convert the fonts with the necessary glyphs.
+* Most uppercase English letters were replaced with Chinese glyphs during the conversion to GFX.
+* If you need those uppercase characters back, you'll need to convert the fonts yourself.
 
 To convert the glyphs, I implemented [fontconvert](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/fontconvert) in Python with [freetype-py](https://pypi.org/project/freetype-py/). If there's interest, I'll make this script open-source.
 
-See the modified glyph map in the table below:
+Modified glyphs:
 | Original | Replaced | Unicode |
 | - | - | - |
 | A | 零 | `0x41` |
