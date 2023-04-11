@@ -3,47 +3,54 @@
 ![Shijian screenshot](/screenshot/Shijian.gif?raw=true)
 
 ## About
-**Shijian** (时间) is a simple Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It was modified from [Stationary Text](https://github.com/BraininaBowl/Stationary-Text-for-Watchy).
+**Shijian** (时间) is a simple aesthetic Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It was modified from [Stationary Text](https://github.com/BraininaBowl/Stationary-Text-for-Watchy).
 
 * It only tells the time, so no additional settings are required.
-* The characters for the numeric hours are capitalised to fit with the aesthetic.
-* Only the files in the `src` folder are required.
+* The characters for the hour are in uppercase (大写) to fit with the style.
+* Only the files in the `src` folder are required for deployment.
 
 ## Customisation
-* The `font` folder is there if you want to customise this watchface.
-* If you want to use the lowercase numbers, just change all `uc` arrays to `lc` arrays.
-* If you want to use light mode, just swap all instances of `GxEPD_WHITE` with `GxEPD_BLACK`.
-* Most uppercase English characters are swapped out with the numerical glyphs. To add uppercase English characters, please re-convert the font with the glyphs you need.
+Modifying the logic is very simple:
+* To switch numbers between uppercase and lowercase, just replace `uc` in the array names with `lc` or vice versa.
+* To use light mode, just swap all instances of `GxEPD_WHITE` with `GxEPD_BLACK`.
+
+Modifying the glyphs is pretty complicated:
+* All fonts are in the `font` folder.
+* I replaced most uppercase English letters with Chinese glyphs when converting to Adafruit GFX.
+* If you need English characters, please re-convert the fonts with the necessary glyphs.
+
+To convert the glyphs, I implemented [fontconvert](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/fontconvert) in Python with [freetype-py](https://pypi.org/project/freetype-py/). If there's interest, I'll make this script open-source.
 
 See the modified glyph map in the table below:
-| Original | Replaced |
-| - | - |
-| A | 零 |
-| B | 一 |
-| C | 二 |
-| D | 三 |
-| E | 四 |
-| F | 五 |
-| G | 六 |
-| H | 七 |
-| I | 八 |
-| J | 九 |
-| K | 十 |
-| L | 壹 |
-| M | 贰 |
-| N | 叁 |
-| O | 肆 |
-| P | 伍 |
-| Q | 陆 |
-| R | 柒 |
-| S | 捌 |
-| T | 玖 |
-| U | 拾 |
-| V | 时 |
-| W | 分 |
-| X | 整 |
+| Original | Replaced | Unicode |
+| - | - | - |
+| A | 零 | `0x41` |
+| B | 一 | `0x42` |
+| C | 二 | `0x43` |
+| D | 三 | `0x44` |
+| E | 四 | `0x45` |
+| F | 五 | `0x46` |
+| G | 六 | `0x47` |
+| H | 七 | `0x48` |
+| I | 八 | `0x49` |
+| J | 九 | `0x4A` |
+| K | 十 | `0x4B` |
+| L | 壹 | `0x4C` |
+| M | 贰 | `0x4D` |
+| N | 叁 | `0x4E` |
+| O | 肆 | `0x4F` |
+| P | 伍 | `0x50` |
+| Q | 陆 | `0x51` |
+| R | 柒 | `0x52` |
+| S | 捌 | `0x53` |
+| T | 玖 | `0x54` |
+| U | 拾 | `0x55` |
+| V | 时 | `0x56` |
+| W | 分 | `0x57` |
+| X | 整 | `0x58` |
 
-Special thanks to [Pconti31](https://github.com/Pconti31) for his [TTF2GFX](https://github.com/Pconti31/TTF2GFX) library, although I found it easier to replace glyphs in bulk using [freetype-py](https://pypi.org/project/freetype-py/).
+## Mentions
+Special thanks to [Pconti31](https://github.com/Pconti31) for his [TTF2GFX](https://github.com/Pconti31/TTF2GFX) library.
 
 ## Notes
 If you wish to submit a PR or issue, you are most welcome, but please keep it in English.
