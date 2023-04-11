@@ -1,8 +1,12 @@
-# Watchy-Shijian
-**Shijian** is a simple, no-frills Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It only tells the time, so no additional settings are required.
+# Shijian for Watchy
+## About
+**Shijian** is a simple, no-frills Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It was modified from [Stationary Text](https://github.com/BraininaBowl/Stationary-Text-for-Watchy).
+
+It only tells the time, so no additional settings are required.
 
 Only the files in the `src` folder are required. The `font` folder is there if you want to customise this watchface.
 
+## Customisation
 The characters for the numeric hours are capitalised to fit with the aesthetic. If you want to use the lowercase numbers, just change all `uc` arrays to `lc` arrays.
 
 Most uppercase English characters are swapped out with the numerical glyphs, so to add uppercase English characters, please convert and add your own font. See the modified glyph map in the table below:
@@ -32,4 +36,4 @@ Most uppercase English characters are swapped out with the numerical glyphs, so 
 | V | 时 |
 | W | 分 |
 
-Special thanks to [Pconti31](https://github.com/Pconti31) for his [TTF2GFX](https://github.com/Pconti31/TTF2GFX) library, although I found it easier to replace in bulk using [freetype-py](https://pypi.org/project/freetype-py/).
+Special thanks to [Pconti31](https://github.com/Pconti31) for his [TTF2GFX](https://github.com/Pconti31/TTF2GFX) library, although I found it easier to replace glyphs in bulk using [freetype-py](https://pypi.org/project/freetype-py/).
