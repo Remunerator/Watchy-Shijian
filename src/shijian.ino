@@ -62,7 +62,10 @@ public:
 		lines += 1;
 		display.setCursor(5, lines * 47 - 2);
 		display.setFont(&HanDan24pt7b);
-		if (currentTime.Minute != 0) {
+		if (currentTime.Minute == 0) {
+			minuteStr = "X";
+		}
+		else {
 			if (currentTime.Minute < 10) {
 				minuteStr = "A" + lclows[currentTime.Minute];
 			}
@@ -79,10 +82,10 @@ public:
 				}
 			}
 			minuteStr += "W";
-			display.getTextBounds(minuteStr, 0, 0, &x1, &y1, &w, &h);
-			display.setCursor(100 - 5 - w / 2, lines * 47 - 2);
-			display.print(minuteStr);
 		}
+		display.getTextBounds(minuteStr, 0, 0, &x1, &y1, &w, &h);
+		display.setCursor(100 - w / 2 - 5, lines * 47 - 2);
+		display.print(minuteStr);
 	}
 };
 
