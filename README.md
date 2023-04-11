@@ -51,6 +51,3 @@ See the modified glyph map in the table below:
 
 ## Mentions
 Special thanks to [Pconti31](https://github.com/Pconti31) for his [TTF2GFX](https://github.com/Pconti31/TTF2GFX) library.
-
-## Notes
-If you wish to submit a PR or issue, you are most welcome, but please keep it in English.
