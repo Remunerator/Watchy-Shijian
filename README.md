@@ -1,9 +1,9 @@
 # Watchy-Shijian
 **Shijian** is a simple, no-frills Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It only tells the time, so no additional settings are required.
 
-Only the files in the `src` folder are required. The `font` folder is there if you want to customise it yourself.
+Only the files in the `src` folder are required. The `font` folder is there if you want to customise this watchface.
 
-The characters for the numeric hours are capitalised to fit with the aesthetic.
+The characters for the numeric hours are capitalised to fit with the aesthetic. If you want to use the lowercase numbers, just change all `uc` arrays to `lc` arrays.
 
 Most uppercase English characters are swapped out with the numerical glyphs, so to add uppercase English characters, please convert and add your own font. See the modified glyph map in the table below:
 | Original | Replaced |
