@@ -3,7 +3,7 @@
 ![Shijian screenshot](/screenshot/Shijian.gif?raw=true)
 
 ## About
-**Shijian** (时间) is a simple aesthetic Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It was modified from [Stationary Text](https://github.com/BraininaBowl/Stationary-Text-for-Watchy).
+**Shijian** (时间/事件) is a simple aesthetic Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It is modified from [Stationary Text](https://github.com/BraininaBowl/Stationary-Text-for-Watchy).
 
 * It only tells the time, so no additional settings are required.
 * The characters for the hour are in uppercase (大写) to fit with the style.
