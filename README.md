@@ -3,7 +3,7 @@
 ![Shijian screenshot](/screenshot/Shijian.gif?raw=true)
 
 ## About
-**Shijian** is a simple, no-frills Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It was modified from [Stationary Text](https://github.com/BraininaBowl/Stationary-Text-for-Watchy).
+**Shijian** is a simple Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It was modified from [Stationary Text](https://github.com/BraininaBowl/Stationary-Text-for-Watchy).
 
 * It only tells the time, so no additional settings are required.
 * The characters for the numeric hours are capitalised to fit with the aesthetic.
@@ -12,6 +12,7 @@
 ## Customisation
 * The `font` folder is there if you want to customise this watchface.
 * If you want to use the lowercase numbers, just change all `uc` arrays to `lc` arrays.
+* If you want to use light mode, just swap all instances of `GxEPD_WHITE` with `GxEPD_BLACK`.
 * Most uppercase English characters are swapped out with the numerical glyphs. To add uppercase English characters, please re-convert the font with the glyphs you need.
 
 See the modified glyph map in the table below:
