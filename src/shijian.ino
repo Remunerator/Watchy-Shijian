@@ -13,10 +13,6 @@ public:
 	
 	void drawWatchFace() { //override this method to customize how the watch face looks
 		uint16_t lines = 1;
-		// const String lows[10] = { "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine" };
-		// const String teensone[11] = { "","ten", "eleven", "twelve", "thir", "four", "fif", "six", "seven", "eight", "nine" };
-		// const String teenstwo[11] = { "", "", "", "teen", "teen", "teen", "teen", "teen", "teen", "teen", "teen" };
-		// const String tens[10] = { "zero", "ten", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety" };
 
 		const String lclows[10] = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J" };
 		const String lcteensone[11] = { "", "K", "K", "K", "K", "K", "K", "K", "K", "K", "K" };
@@ -32,7 +28,6 @@ public:
 		display.fillScreen(GxEPD_WHITE);
 		display.setTextColor(GxEPD_WHITE);
 		display.fillRoundRect(RECT_LEFT_PX, RECT_TOP_PX, 200 - 2 * RECT_LEFT_PX, 200 - 2 * RECT_TOP_PX, RECT_RADIUS, GxEPD_BLACK);
-		//display.setTextWrap(false);
 
 		String hourStr, minuteStr;
 		int16_t  x1, y1;
@@ -40,7 +35,6 @@ public:
 
 		//drawtime
 		lines += 1;
-		// display.setCursor(5, lines * 47 - 2);
 		display.setFont(&SuXinPoemSeal24pt7b);
 		if (currentTime.Hour == 0) {
 			hourStr = uctens[2] + uclows[4];
@@ -68,10 +62,7 @@ public:
 		lines += 1;
 		display.setCursor(5, lines * 47 - 2);
 		display.setFont(&HanDan24pt7b);
-		if (currentTime.Minute == 0) {
-			// display.print("V");
-		}
-		else {
+		if (currentTime.Minute != 0) {
 			if (currentTime.Minute < 10) {
 				minuteStr = "A" + lclows[currentTime.Minute];
 			}
