@@ -1,5 +1,5 @@
-# Shijian
-A simple, no-frills Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It only tells the time, so no additional settings are required.
+# Watchy-Shijian
+**Shijian** is a simple, no-frills Chinese watchface for [Watchy](https://watchy.sqfmi.com/). It only tells the time, so no additional settings are required.
 
 Only the files in the `src` folder are required. The `font` folder is there if you want to customise it yourself.
 
