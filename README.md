@@ -4,12 +4,16 @@
 
 It only tells the time, so no additional settings are required.
 
-Only the files in the `src` folder are required. The `font` folder is there if you want to customise this watchface.
+The characters for the numeric hours are capitalised to fit with the aesthetic.
+
+Only the files in the `src` folder are required.
 
 ## Customisation
-The characters for the numeric hours are capitalised to fit with the aesthetic. If you want to use the lowercase numbers, just change all `uc` arrays to `lc` arrays.
+* The `font` folder is there if you want to customise this watchface.
+* If you want to use the lowercase numbers, just change all `uc` arrays to `lc` arrays.
+* Most uppercase English characters are swapped out with the numerical glyphs. To add uppercase English characters, please re-convert the font with the glyphs you need.
 
-Most uppercase English characters are swapped out with the numerical glyphs, so to add uppercase English characters, please convert and add your own font. See the modified glyph map in the table below:
+See the modified glyph map in the table below:
 | Original | Replaced |
 | - | - |
 | A | 零 |
