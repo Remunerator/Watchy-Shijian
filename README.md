@@ -8,18 +8,19 @@
 * It only tells the time, so no additional settings are required.
 * The characters for the hour are in uppercase (大写) to fit with the style.
 * Only the files in the `src` folder are required for deployment.
+* Unfortunately, the font is only for *Simplified Chinese*, so there will be no *Traditional Chinese* version of this skin.
 
 ## Customisation
 Modifying the logic is very simple:
 * To switch numbers between uppercase and lowercase, just replace `uc` in the array names with `lc` or vice versa.
 * To use light mode, just swap all instances of `GxEPD_WHITE` with `GxEPD_BLACK`.
 
-Modifying the glyphs is pretty complicated:
+Modifying the glyphs can be pretty complicated:
 * All fonts are in the `font` folder.
 * Most uppercase English letters were replaced with Chinese glyphs during the conversion to GFX.
 * If you need those uppercase characters back, you'll need to convert the fonts yourself.
 
-To convert the glyphs, I implemented [fontconvert](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/fontconvert) in Python with [freetype-py](https://pypi.org/project/freetype-py/). If there's interest, I'll open-source the script.
+To convert the glyphs, [fontconvert](https://github.com/adafruit/Adafruit-GFX-Library/tree/master/fontconvert) was implemented in Python with [freetype-py](https://pypi.org/project/freetype-py/). If there's interest, I'll open-source the script.
 
 ### Modified Glyphs
 | ASCII | Original | Replaced | Translation |
