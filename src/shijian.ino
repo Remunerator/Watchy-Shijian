@@ -1,4 +1,5 @@
 #include <Watchy.h>  //include the Watchy library
+#include "settings.h"
 #include "SuXinPoemSeal24pt7b.h"
 #include "HanDan24pt7b.h"
 
@@ -84,12 +85,10 @@ public:
 			minuteStr += "W";
 		}
 		display.getTextBounds(minuteStr, 0, 0, &x1, &y1, &w, &h);
-		display.setCursor(100 - w / 2 - 5, lines * 47 - 2);
+		display.setCursor(100 - w / 2 - 5, lines * 47 - 2 + 5);
 		display.print(minuteStr);
 	}
 };
-
-watchySettings settings{};
 
 Shijian m(settings);  //instantiate your watchface
 
