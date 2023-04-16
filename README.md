@@ -8,7 +8,7 @@
 * It only tells the time, so only NTP settings are sufficient for syncing.
 * The characters for the hour are in uppercase (大写) to fit with the style.
 * Only the files in the `src` folder are required for deployment.
-* Unfortunately, the font is only for *Simplified Chinese*, so there will be no *Traditional Chinese* version of this watchface.
+* The font only supports *Simplified Chinese*, so there won't be a *Traditional Chinese* version.
 
 ## Customisation
 Modifying the logic is very simple:
